@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Moovely
 
-## Getting Started
+**Live: [moovely-umber.vercel.app](https://moovely-umber.vercel.app)**
 
-First, run the development server:
+Is the grass actually greener? Moovely compares any two places in the UK by what you would really have left each year after tax, rent and bills, not by headline salary.
+
+## What it does
+
+- **Compares 288 UK locations** side by side: take-home pay, rent, bills and the disposable income left over.
+- **Calculates tax properly**: 2025/26 income tax and National Insurance, including Scotland's separate bands.
+- **Personalises the result** for a young professional, a growing family or a downsizer working from home, with adjustable salary and home size.
+- **Adds the things that matter when moving**: crime and school comparisons, an affordability gauge, and a one-line verdict.
+- **Built to spread**: shareable comparisons with generated social images, popular-comparison pages, a blog and a sitemap for search.
+
+## Stack
+
+Next.js, React, TypeScript and Tailwind, deployed on Vercel. Location data and the tax logic are in [`src/data/locations.ts`](src/data/locations.ts) and [`src/lib/calculations.ts`](src/lib/calculations.ts).
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by [James Harrop](https://jamesharrop.co), February 2026.
